@@ -53,7 +53,7 @@
 					<h1>Компьютерные решения для бухгалтерии</h1>
 					<p>Профессиональная настройка и обслуживание<br /> бухгалтерских компьютеров</p>
 					<div>
-						<a href="#" class="orange_pill">вызвать мастера</a>
+						<a href="#" class="orange_pill" data-popup-link = "callback">вызвать мастера</a>
 					</div>
 				</div>
 				<div class="shape shape_2"></div>
@@ -271,25 +271,25 @@
 						<div>
 							<div class="price_thumb">
 								<p>120 руб.</p>
-								<a href="#" class="orange_pill">заказать</a>
+								<a href="#" class="orange_pill" data-popup-link = "callback">заказать</a>
 							</div>
 						</div>
 						<div>
 							<div class="price_thumb">
 								<p>180–240 руб.</p>
-								<a href="#" class="orange_pill">заказать</a>
+								<a href="#" class="orange_pill" data-popup-link = "callback">заказать</a>
 							</div>
 						</div>
 						<div>
 							<div class="price_thumb">
 								<p>240–350 руб.</p>
-								<a href="#" class="orange_pill">заказать</a>
+								<a href="#" class="orange_pill" data-popup-link = "callback">заказать</a>
 							</div>
 						</div>
 						<div>
 							<div class="price_thumb">
 								<p>350–400 руб.</p>
-								<a href="#" class="orange_pill">заказать</a>
+								<a href="#" class="orange_pill" data-popup-link = "callback">заказать</a>
 							</div>
 						</div>
 					</div>
@@ -338,63 +338,63 @@
 						<div class="service_thumb">
 							<h3>Настройка компьютера с выездом мастера</h3>
 							<p>от 120 руб.</p>
-							<a href="#" class="transparent_pill">заказать</a>
+							<a href="#" class="transparent_pill" data-popup-link = "callback">заказать</a>
 						</div>
 					</div>
 					<div>
 						<div class="service_thumb">
 							<h3>Возврат explorer или настройка Edge</h3>
 							<p>от 60 руб</p>
-							<a href="#" class="transparent_pill">заказать</a>
+							<a href="#" class="transparent_pill" data-popup-link = "callback">заказать</a>
 						</div>
 					</div>
 					<div>
 						<div class="service_thumb">
 							<h3>Скорая помощь, настройка портала для отчета</h3>
 							<p>от 50 руб.</p>
-							<a href="#" class="transparent_pill">заказать</a>
+							<a href="#" class="transparent_pill" data-popup-link = "callback">заказать</a>
 						</div>
 					</div>
 					<div>
 						<div class="service_thumb">
 							<h3>Модернизация, ремонт компьютера</h3>
 							<p>от 70 руб.</p>
-							<a href="#" class="transparent_pill">заказать</a>
+							<a href="#" class="transparent_pill" data-popup-link = "callback">заказать</a>
 						</div>
 					</div>
 					<div>
 						<div class="service_thumb">
 							<h3>Срочный выезд и решение проблемы</h3>
 							<p>от 120 руб.</p>
-							<a href="#" class="transparent_pill">заказать</a>
+							<a href="#" class="transparent_pill" data-popup-link = "callback">заказать</a>
 						</div>
 					</div>
 					<div>
 						<div class="service_thumb">
 							<h3>Чистка от вирусов и рекламных баннеров</h3>
 							<p>от 50 руб.</p>
-							<a href="#" class="transparent_pill">заказать</a>
+							<a href="#" class="transparent_pill" data-popup-link = "callback">заказать</a>
 						</div>
 					</div>
 					<div>
 						<div class="service_thumb">
 							<h3>Настройка сети и Wi-Fi, принтеров</h3>
 							<p>от 70 руб.</p>
-							<a href="#" class="transparent_pill">заказать</a>
+							<a href="#" class="transparent_pill" data-popup-link = "callback">заказать</a>
 						</div>
 					</div>
 					<div>
 						<div class="service_thumb">
 							<h3>Установка, замена налоговых сертификатов</h3>
 							<p>от 120 руб.</p>
-							<a href="#" class="transparent_pill">заказать</a>
+							<a href="#" class="transparent_pill" data-popup-link = "callback">заказать</a>
 						</div>
 					</div>
 					<div>
 						<div class="service_thumb">
 							<h3>Обслуживание компьютеров и ноутбуков</h3>
 							<p>от 50 руб.</p>
-							<a href="#" class="transparent_pill">заказать</a>
+							<a href="#" class="transparent_pill" data-popup-link = "callback">заказать</a>
 						</div>
 					</div>
 				</div>
@@ -431,6 +431,37 @@
 		</div>
 	</footer>
 	<!-- /Footer -->
+
+	<!-- Popup -->
+	<div class="popup" data-popup = "callback">
+		<div class="popup_content">
+			<button type="button" class="close">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M6 18L18 6M6 6L18 18" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</button>
+			<div class="popup_title">
+				<h3>Оформить заявку</h3>
+			</div>
+			<form>
+				<div class="input_wrapp">
+					<input type="text" name="name" placeholder="Имя" />
+				</div>
+				<div class="input_wrapp">
+					<input type="tel" name="tel" placeholder="Телефон" />
+				</div>
+				<div class="submit_wrapp">
+					<button type="submit" class="orange_pill">Заказать</button>
+				</div>
+				<div class="form_text">
+					<p>Мы не передаем Вашу персональную<br /> информацию третьим лицам</p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup_bg"></div>
+	<!-- /Popup -->
+
 	</div>
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<script src="vendors/js/jquery.js"></script>

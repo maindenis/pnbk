@@ -526,6 +526,7 @@ textarea:focus {
     align-items: center;
     padding: 5px 30px 7px 30px;
     min-height: 50px;
+    border: none;
     background: #E86828;
     border-radius: 12px;
     font-family: 'Furore';
@@ -533,6 +534,7 @@ textarea:focus {
     font-size: 20px;
     line-height: 120%;
     color: #FFF;
+    cursor: pointer;
     -webkit-transition-property: box-shadow;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -1090,3 +1092,110 @@ footer {
     line-height: 120%;
     color: #FFF;
 }
+
+body.fixed {
+    width: 100%;
+    padding-right: 20px;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+}
+/*-- Popups --*/
+.popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 40px 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 21;
+}
+
+.popup_bg {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(25, 25, 25, 0.75);
+    z-index: 19;
+}
+
+.popup_content {
+    width: 100%;
+    margin: 30px auto;
+    padding: 37px 30px 33px 30px;
+    max-width: 410px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+}
+
+.close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.popup_content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.popup_title {
+    padding: 10px 0 14px 0;
+    text-align: center;
+}
+
+.popup_title h3 {
+    font-family: 'Furore';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFF;
+}
+
+.input_wrapp {
+    margin: 16px 0;
+}
+
+.input_wrapp input {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    height: 50px;
+    border: none;
+    background: #191919;
+    border-radius: 12px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 49px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.submit_wrapp .orange_pill {
+    width: 100%;
+}
+
+.form_text {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.form_text p {
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/*-- /Popups --*/
