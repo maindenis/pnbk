@@ -1,3 +1,11 @@
+function getRespParams() {
+    if($(document).scrollTop() > 10) {
+        $("#header").addClass("scroll");
+    } else {
+        $("#header").removeClass("scroll");
+    }
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -5,14 +13,15 @@ g = d.getElementsByTagName('body')[0],
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 
 $(window).resize(function() {
-
+    getRespParams();
 });
 
 $(document).scroll(function() {
-
+    getRespParams();
 });
 
 $(document).ready(function() {
+    getRespParams();
 
     $(".table .table_row:last-child").prev(".table_row").css({
         "border-bottom" : "none"
@@ -82,6 +91,14 @@ $(document).ready(function() {
             $("[data-popup]").fadeOut(300);
         }
       }
+    });
+
+    // ------------------
+
+    $(document).on("click", ".dr_btn", function(e) {
+        e.preventDefault();
+        parent = $(this).closest(".dr_pack_wrapp");
+        dr = parent.addClass("active");
     });
 
 });

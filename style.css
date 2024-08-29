@@ -293,6 +293,7 @@ textarea:focus {
 .row {
     width: 100%;
     max-width: 1330px;
+    min-width: 320px;
     padding: 0 25px;
     margin: 0 auto;
 }
@@ -319,10 +320,35 @@ textarea:focus {
 
 #header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
+    -webkit-transition-property: background, border, border-radius;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: background, border, border-radius;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: background, border, border-radius;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: background, border, border-radius;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: background, border, border-radius;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+#header.scroll {
+    background: #1A1919;
+    border-bottom: 1px solid rgba(232, 104, 40, .2);
+    border-radius: 0 0 20px 20px;
 }
 
 .header_site {
@@ -363,6 +389,13 @@ textarea:focus {
     position: absolute;
     top: -1px;
     right: 0;
+}
+
+.logo > div:nth-child(1) img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
 .logo p {
@@ -503,6 +536,8 @@ textarea:focus {
 
 .promo_descript {
     max-width: 628px;
+    position: relative;
+    z-index: 2;
 }
 
 .promo_descript h1 {
@@ -618,6 +653,10 @@ textarea:focus {
 
 .thumb p {
     padding: 3px 0;
+}
+
+.promo_img_resp {
+    display: none;
 }
 
 /*-- /Section 1 - Main Page --*/
@@ -845,6 +884,10 @@ textarea:focus {
     width: calc(100% - 30px);
 }
 
+.pack {
+    display: none;
+}
+
 /*-- /Section 2 - Main Page --*/
 
 /*-- Section 3 - Main Page --*/
@@ -903,6 +946,8 @@ textarea:focus {
 }
 
 .service_thumb {
+    height: 100%;
+    width: 100%;
     padding: 20px 20px 18px 20px;
     background: rgba(255, 255, 255, .04);
     border: 1px solid rgba(255, 255, 255, .12);
@@ -977,10 +1022,6 @@ textarea:focus {
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
 
-footer {
-
-}
-
 .footer_section {
     padding: 21px 0 21px 0;
     position: relative;
@@ -1037,6 +1078,10 @@ footer {
     width: auto;
     height: auto;
     max-width: 100%;
+}
+
+.footer_logo > div:nth-child(2) {
+    display: none;
 }
 
 .footer_templ > div:nth-child(2) p {
